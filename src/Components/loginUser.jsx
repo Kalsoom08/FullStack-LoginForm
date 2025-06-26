@@ -1,6 +1,6 @@
 import React from 'react';
 
-const loginUser = () => {
+const LoginUser = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-white relative">
       
@@ -44,4 +44,4 @@ const loginUser = () => {
   );
 };
 
-export default loginUser;
+export default LoginUser;
