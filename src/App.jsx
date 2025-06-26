@@ -1,11 +1,11 @@
 import Login from './Components/loginUser';
-import Register from './Components/RegisterUser';
+// import Register from './Components/RegisterUser';
 
 const App = () => {
   return (
     <div>
       <Login/>
-      <Register/>
+      {/* <Register/> */}
     </div>
   )
 }
