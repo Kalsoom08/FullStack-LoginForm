@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { loginUser } from "../API's/authAPI";
 
-const LoginUser = () => {
 
+export const LoginUser = () => {
+ 
   const [data , setData] = useState({
     email:"",
     password: "" 
@@ -79,6 +80,6 @@ const LoginUser = () => {
 
     </div>
   );
-};
+}
 
-export default LoginUser;
+
