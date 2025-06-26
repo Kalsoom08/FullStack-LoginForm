@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { loginUser } from "../API's/authAPI";
+import {useNavigate} from 'react-router-dom';
 
 
 export const LoginUser = () => {
@@ -10,6 +11,7 @@ export const LoginUser = () => {
     password: "" 
   })
   
+  const Navigate = useNavigate()
 
   const mutation = useMutation({
     mutationFn: loginUser,
@@ -72,7 +74,9 @@ export const LoginUser = () => {
 
         <p className="text-center text-xs mt-4 text-[#3d3737b4]">
           Don’t have an account?{' '}
-          <span className="text-[#AB3DFF] font-semibold cursor-pointer">
+          <span className="text-[#AB3DFF] font-semibold cursor-pointer"
+           onClick={() => Navigate('/register')}
+          >
             Sign Up
           </span>
         </p>
